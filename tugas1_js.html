@@ -1,0 +1,75 @@
+<script language="javascript">
+  /*
+Diketahui:
+pegawai: Ridwan
+jabatan: manager
+status: menikah 
+Tugas: 
+Cetak Data Pegawai berbentuk tabel:
+Judul Kolom gunakan thead
+Data2 gunakan tbody 
+Nama Pegawai, Jabatan, Status, 
+Gaji Pokok(if): Manager=>15 jt, Asisten Manager=>10 jt, Staff=>5 jt 
+Tunjangan Jabatan: 15% dari gapok
+BPJS: 10% dari gapok
+Tunjangan Keluarga (ternary): dilihat dari status yg sudah menikah =>20% dari gapok
+Total Gaji: jumlahlahkan seluruh element gaji (gunakan tfoot)
+Format pengumpulan tugas:
+Disimpan di githubnya masing2:
+contoh:
+buat repo baru (javascript) -> file tugas di push di repo tsb
+lalu linknya dlm txt di assign ke LMS
+*/
+
+  const pegawai = "Satria";
+  const jabatan = "Manager";
+  const status = "Menikah";
+  let gajiPokok = null;
+
+  if (jabatan == "Manager") gajiPokok = 15000000;
+  if (jabatan == "Asisten Manager") gajiPokok = 10000000;
+  if (jabatan == "Staff") gajiPokok = 5000000;
+
+  let tunjanganJabatan = gajiPokok * 0.15;
+  let bpjs = gajiPokok * 0.1;
+  let tunjanganKeluarga = status == "Menikah" ? gajiPokok * 0.2 : 0;
+  let totalGaji = gajiPokok + tunjanganJabatan + bpjs + tunjanganKeluarga;
+
+  document.write(`
+    Pegawai: ${pegawai} <br />
+    Jabatan: ${jabatan} <br />
+    Status: ${status} <br />
+    <br /> 
+
+    <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Data</th> 
+                <th>Jumlah</th>   
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Gaji Pokok</td> 
+            <td align="right">Rp.${gajiPokok}</td>   
+        </tr>
+        <tr>
+            <td>Tunjangan jabatan</td> 
+            <td align="right">Rp.${tunjanganJabatan}</td>   
+        </tr>
+        <tr>
+            <td>BPJS</td> 
+            <td align="right">Rp.${bpjs}</td>   
+        </tr>
+        <tr>
+            <td>Tunjangan Keluarga</td> 
+            <td align="right">Rp.${tunjanganKeluarga}</td>   
+        </tr>
+        <tr>
+            <th>Total Gaji</th> 
+            <th align="right">Rp.${totalGaji}</th>   
+        </tr>
+        </tbody>
+    </table>
+`);
+</script>
