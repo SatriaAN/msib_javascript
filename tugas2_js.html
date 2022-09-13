@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tugas 2 Javascript</title>
+  </head>
+  <body>
+    <h1 align="center">Daftar Pegawai</h1>
+    <table align="center" border="1" cellspacing="0" cellpadding="10">
+      <thead>
+        <tr>
+          <th>NO</th>
+          <th>Nama</th>
+          <th>Jabatan</th>
+          <th>Agama</th>
+          <th>Gaji Pokok</th>
+          <th>Tunjangan Jabatan</th>
+          <th>Tunjangan Kesehatan</th>
+          <th>Gaji Kotor</th>
+          <th>Zakat Profesi</th>
+          <th>Take Home Pay</th>
+        </tr>
+      </thead>
+      <tbody>
+        <script>
+          // null Variable
+          let no, color, name, jabatan, agama, gajiPokok;
+
+          //  looping & conditional
+          for (no = 1; no <= 100; no++) {
+            color = no % 2 == 0 ? "lightblue" : "yellow";
+            no % 2 == 0 ? (agama = "Non Muslim") : (agama = "Muslim");
+
+            if (no <= 25) {
+              jabatan = "Manager";
+            } else if (no >= 26 && no <= 50) {
+              jabatan = "Asisten Manager";
+            } else if (no >= 51 && no <= 75) {
+              jabatan = "Supervisor";
+            } else if (no >= 76 && no <= 100) {
+              jabatan = "Staff";
+            } else {
+              jabatan = "Belum Terdaftar";
+            }
+
+            switch (jabatan) {
+              case "Manager":
+                gajiPokok = 15000000;
+                break;
+              case "Asisten Manager":
+                gajiPokok = 10000000;
+                break;
+              case "Supervisor":
+                gajiPokok = 7000000;
+                break;
+              case "Staff":
+                gajiPokok = 4000000;
+                break;
+              default:
+                gajiPokok = "-";
+                break;
+            }
+
+            // variable
+            let tunjanganJabatan = gajiPokok * 0.2;
+            let tunjanganKesehatan = gajiPokok * 0.1;
+            let gajiKotor = gajiPokok + tunjanganJabatan + tunjanganKesehatan;
+            let zakatProfesi =
+              agama == "Muslim" && gajiKotor >= 7000000 ? gajiKotor * 0.025 : 0;
+            let takeHomePay = gajiKotor - zakatProfesi;
+
+            // Result
+            document.write(`
+            <tr bgcolor=${color}>
+                <td>${no}</td>
+                <td>Pegawai${no}</td>
+                <td>${jabatan}</td>
+                <td>${agama}</td>
+                <td align="right">Rp.${gajiPokok}</td>
+                <td align="right">Rp.${tunjanganJabatan}</td>
+                <td align="right">Rp.${tunjanganKesehatan}</td>
+                <td align="right">Rp.${gajiKotor}</td>
+                <td align="right">Rp.${zakatProfesi}</td>
+                <td align="right">Rp.${takeHomePay}</td>
+            </tr>`);
+          }
+        </script>
+      </tbody>
+    </table>
+
+    <script></script>
+  </body>
+</html>
