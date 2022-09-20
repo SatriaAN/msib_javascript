@@ -22,54 +22,54 @@
           <th scope="col">Dampak</th>
         </tr>
       </thead>
-      <script>
-        class Gempa {
-          constructor(no, lokasi, skala) {
-            this.no = no;
-            this.lokasi = lokasi;
-            this.skala = skala;
-          }
-          dampak() {
-            if (this.skala <= 2) this.dampakGempa = "Tidak Terasa";
-            if (this.skala > 2 && this.skala <= 4)
-              this.dampakGempa = "Bangunan Retak";
-            if (this.skala > 4 && this.skala <= 6)
-              this.dampakGempa = "Bangunan Roboh";
-            if (this.skala > 6) this.dampakGempa = "Berpotensi Tsunami";
-            return this.dampakGempa;
-          }
+      <tbody>
+        <script>
+          class Gempa {
+            constructor(no, lokasi, skala) {
+              this.no = no;
+              this.lokasi = lokasi;
+              this.skala = skala;
+            }
+            dampak() {
+              if (this.skala <= 2) this.dampakGempa = "Tidak Terasa";
+              if (this.skala > 2 && this.skala <= 4)
+                this.dampakGempa = "Bangunan Retak";
+              if (this.skala > 4 && this.skala <= 6)
+                this.dampakGempa = "Bangunan Roboh";
+              if (this.skala > 6) this.dampakGempa = "Berpotensi Tsunami";
+              return this.dampakGempa;
+            }
 
-          infoGempa() {
-            this.info = document.write(`
-                 <tbody>
-                    <tr>
-                        <td scope="col">${this.no}</td>
-                        <td scope="col">${this.lokasi}</td>
-                        <td scope="col">${this.dampak()}</td>
-                    </tr>
-                  </tbody>
+            infoGempa() {
+              this.info = document.write(`
+                <tr>
+                    <td scope="col">${this.no}</td>
+                    <td scope="col">${this.lokasi}</td>
+                    <td scope="col">${this.dampak()}</td>
+                </tr>
                 
             `);
-            return this.info;
+              return this.info;
+            }
           }
-        }
-        s1 = new Gempa(1, "Depok", 1);
-        s2 = new Gempa(2, "Lampung", 3);
-        s3 = new Gempa(3, "Jakarta", 5);
-        s4 = new Gempa(4, "Bogor", 2);
-        s5 = new Gempa(5, "Sumatra", 4);
-        s6 = new Gempa(6, "Jawa", 8);
-        s7 = new Gempa(7, "Pekalongan", 4);
-        s8 = new Gempa(8, "Kalimantan", 1);
-        s9 = new Gempa(9, "Aceh", 9);
-        s10 = new Gempa(10, "Papua", 7);
+          s1 = new Gempa(1, "Depok", 1);
+          s2 = new Gempa(2, "Lampung", 3);
+          s3 = new Gempa(3, "Jakarta", 5);
+          s4 = new Gempa(4, "Bogor", 2);
+          s5 = new Gempa(5, "Sumatra", 4);
+          s6 = new Gempa(6, "Jawa", 8);
+          s7 = new Gempa(7, "Pekalongan", 4);
+          s8 = new Gempa(8, "Kalimantan", 1);
+          s9 = new Gempa(9, "Aceh", 9);
+          s10 = new Gempa(10, "Papua", 7);
 
-        let arr = [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10];
-        // looping data gempa
-        for (let i in arr) {
-          arr[i].infoGempa();
-        }
-      </script>
+          let arr = [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10];
+          // looping data gempa
+          for (let i in arr) {
+            arr[i].infoGempa();
+          }
+        </script>
+      </tbody>
     </table>
   </body>
 </html>
