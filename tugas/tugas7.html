@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 7 Javascript</title>
+    <link rel="stylesheet" href="./assets7.html/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets7.html/css/jquery.dataTables.min.css"
+    />
+  </head>
+  <body style="background-color: #967e76">
+    <!-- Main Content Awal -->
+    <div class="container">
+      <h1 class="text-lg-center mt-5">Suara Hewan</h1>
+      <div class="accordion mt-5" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+              style="background-color: #eee3cb"
+            >
+              &spades; Hewan Unggas
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body d-flex p-2">
+              <!-- Card Awal Unggas 1 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="ayam"></div>
+                <img
+                  class="card-img-top ayam"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ayam</h5>
+
+                  <a
+                    href="#"
+                    class="btn ayam"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Unggas 1 -->
+              <!-- Card Awal Unggas 2 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="bebek"></div>
+                <img
+                  class="card-img-top bebek"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Bebek</h5>
+
+                  <a
+                    href="#"
+                    class="btn bebek"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Unggas 2 -->
+              <!-- Card Awal Unggas 3 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="kkTua"></div>
+                <img
+                  class="card-img-top kkTua"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Burung Kakak tua</h5>
+
+                  <a
+                    href="#"
+                    class="btn kkTua"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Unggas 3 -->
+              <!-- Card Awal Unggas 4 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="burungHantu"></div>
+                <img
+                  class="card-img-top burungHantu"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Burung Hantu</h5>
+
+                  <a
+                    href="#"
+                    class="btn burungHantu"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Unggas 4 -->
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+              style="background-color: #eee3cb"
+            >
+              &clubs; Hewan Ternak
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body d-flex p-2">
+              <!-- Card Awal Ternak 1 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="sapi"></div>
+                <img
+                  class="card-img-top sapi"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sapi</h5>
+
+                  <a
+                    href="#"
+                    class="btn sapi"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Ternak 1 -->
+              <!-- Card Awal Ternak 2 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="kambing"></div>
+                <img
+                  class="card-img-top kambing"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Kambing</h5>
+
+                  <a
+                    href="#"
+                    class="btn kambing"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Ternak 2 -->
+              <!-- Card Awal Ternak 3 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="kucing"></div>
+                <img
+                  class="card-img-top kucing"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Kucing</h5>
+
+                  <a
+                    href="#"
+                    class="btn kucing"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Ternak 3 -->
+              <!-- Card Awal Ternak 4 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="monyet"></div>
+                <img
+                  class="card-img-top monyet"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Monyet</h5>
+
+                  <a
+                    href="#"
+                    class="btn monyet"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Ternak 4 -->
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+              style="background-color: #eee3cb"
+            >
+              &diams; Hewan Buas
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body d-flex p-2">
+              <!-- Card Awal Buas 1 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="harimau"></div>
+                <img
+                  class="card-img-top harimau"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Harimau</h5>
+
+                  <a
+                    href="#"
+                    class="btn harimau"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Buas 1 -->
+              <!-- Card Awal Buas 2 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="srigala"></div>
+                <img
+                  class="card-img-top srigala"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Srigala</h5>
+
+                  <a
+                    href="#"
+                    class="btn srigala"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Buas 2 -->
+              <!-- Card Awal Buas 3 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="beruang"></div>
+                <img
+                  class="card-img-top beruang"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Beruang</h5>
+
+                  <a
+                    href="#"
+                    class="btn beruang"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Buas 3 -->
+              <!-- Card Awal Buas 4 -->
+              <div class="card m-2" style="width: 18rem">
+                <div class="gorila"></div>
+                <img
+                  class="card-img-top gorila"
+                  style="width: 100%; height: 192px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gorila</h5>
+
+                  <a
+                    href="#"
+                    class="btn gorila"
+                    style="background-color: #d7c0ae; color: white"
+                    >Check Sound</a
+                  >
+                </div>
+              </div>
+              <!-- Card Akhir Buas 4 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Content Akhir -->
+    <script src="./assets7.html/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets7.html/js/jquery-3.5.1.js"></script>
+    <script src="./assets7.html/js/jquery.dataTables.min.js"></script>
+
+    <script>
+      // A $( document ).ready() block.
+      $(document).ready(function () {
+        $("a.ayam").click(function () {
+          $("img.ayam").css({
+            background: "url(./assets7.html/images/ayam.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/unggas/ayam.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.ayam");
+        });
+        $("a.bebek").click(function () {
+          $("img.bebek").css({
+            background: "url(./assets7.html/images/bebek.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/unggas/bebek.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.bebek");
+        });
+        $("a.kkTua").click(function () {
+          $("img.kkTua").css({
+            background: "url(./assets7.html/images/kkTua.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/unggas/kkTua.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.kkTua");
+        });
+        $("a.burungHantu").click(function () {
+          $("img.burungHantu").css({
+            background: "url(./assets7.html/images/burungHantu.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/unggas/burungHantu.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.burungHantu");
+        });
+        $("a.sapi").click(function () {
+          $("img.sapi").css({
+            background: "url(./assets7.html/images/sapi.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/ternak/sapi.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.sapi");
+        });
+        $("a.kambing").click(function () {
+          $("img.kambing").css({
+            background: "url(./assets7.html/images/kambing.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/ternak/kambing.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.kambing");
+        });
+        $("a.kucing").click(function () {
+          $("img.kucing").css({
+            background: "url(./assets7.html/images/kucing.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/ternak/kucing.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.kucing");
+        });
+        $("a.monyet").click(function () {
+          $("img.monyet").css({
+            background: "url(./assets7.html/images/monyet.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/ternak/monyet.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.monyet");
+        });
+        $("a.harimau").click(function () {
+          $("img.harimau").css({
+            background: "url(./assets7.html/images/harimau.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/buas/harimau.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.harimau");
+        });
+        $("a.beruang").click(function () {
+          $("img.beruang").css({
+            background: "url(./assets7.html/images/beruang.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/buas/beruang.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.beruang");
+        });
+        $("a.gorila").click(function () {
+          $("img.gorila").css({
+            background: "url(./assets7.html/images/gorila.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/buas/gorila.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.gorila");
+        });
+        $("a.srigala").click(function () {
+          $("img.srigala").css({
+            background: "url(./assets7.html/images/srigala.png)",
+          });
+          $("<audio></audio>")
+            .attr({
+              src: "./assets7.html/audio/buas/serigala.mp3",
+              volume: 0.4,
+              autoplay: "autoplay",
+            })
+            .appendTo("div.srigala");
+        });
+      });
+    </script>
+  </body>
+</html>
